@@ -6,7 +6,6 @@ SolVoice is a blockchain-enabled blogging platform that leverages the power of t
 
 https://github.com/user-attachments/assets/f899e977-a4cd-4afe-9f99-5fd7c80f4d7d
 
-
 ## Project Description
 
 SolVoice aims to solve issues with traditional blogging, such as censorship, data breaches, and unfair monetization models. It provides a decentralized platform where users can create, share, and monetize content securely while maintaining ownership.
