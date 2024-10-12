@@ -1,38 +1,74 @@
 .App {
   text-align: center;
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  padding: 3rem;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 255, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 2rem;
+  color: #00ffff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.google-login-button {
+  margin-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.google-login-button button {
+  background-color: #333 !important;
+  border: 2px solid #00ffff !important;
+  color: #00ffff !important;
+  font-family: 'Roboto', sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  transition: all 0.3s ease !important;
+}
+
+.google-login-button button:hover {
+  background-color: #00ffff !important;
+  color: #333 !important;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5) !important;
+}
+
+.authenticated-message {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #00ff00;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 2rem;
   }
 }
